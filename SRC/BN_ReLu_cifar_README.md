@@ -10,4 +10,4 @@
 - Uses standard normalized CIFAR data
 
 ### Manin highlight
--Thsis can be extented to any number of hidden layers and nodes.
+- Thsis can be extented to any number of hidden layers and nodes.
