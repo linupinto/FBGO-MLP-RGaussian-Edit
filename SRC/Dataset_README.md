@@ -1,4 +1,4 @@
-# ** Datasets Used for the Experiments**
+# **Datasets Used for the Experiments**
 ## **List of Datasets**
 - 📌 **Iris Datset**
 - 📌 **DryBeans Dataset**
