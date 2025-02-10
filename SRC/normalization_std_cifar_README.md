@@ -5,5 +5,5 @@ ensuring that the data has zero mean and unit variance for better
 performance in machine learning models.
 
 ## Key Feature
-- Uses StandardScaler to normalize CIFAR data
+- 🚀 Uses StandardScaler to normalize CIFAR data
 
