@@ -3,7 +3,7 @@
 ## Key features
 - ✅ Implements Batch Normalization with full batch processing
 - ✅ Input normalization at each node using moving average and variance
-- ✅ Full Gradient Optimization method is consisderd
+- ✅ Full Gradient Optimization method is considered
 - ✅ Two hidden layer and a single output layer
 - ✅ ReLu activation in each node of the hidden layer
 - ✅ Linear activation in the output layer
