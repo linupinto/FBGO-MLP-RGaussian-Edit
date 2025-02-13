@@ -2,10 +2,11 @@
 
 ## Key features
 - ✅Full Gradient Optimization method is considered
-- ✅Two hidden layer and a single output layer
+- ✅Two hidden layer and a single output layer.
+-   The code is customized to work on any number of hidden layers and hidden nodes
 - ✅R-Gaussian activation in each nodes of the hidden layer.
 - ✅Linear activation in the output layer
 - ✅Uses standard normalized CIFAR data
 
-### Manin highlight
-- 🚀This approach can be extended to any number of hidden layers and nodes
+### Main highlight
+- 🚀The code is customized to work on any number of hidden layers and hidden nodes
