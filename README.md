@@ -1,5 +1,5 @@
 # FBGO-MLP-RGaussian
-
+Full Batch Gradient Optimization on Multilayer Perceptron structure with RGaussian Activation.
 ## Key Features
 - ✅ Full Gradient Optimization with a single output layer and arbitrary number of hidden layers and nodes, utilizing R-Gaussian and Sigmoid Activation Functions on the Standard CIFAR Dataset:
   - 📌Rgauss_cifar.py
