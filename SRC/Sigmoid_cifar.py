@@ -83,6 +83,7 @@ def backwardPropagation(X, Y, parameters, activation):
         change[f"db{l}"] = np.dot(change[f"S3{l}"], ED)
         S4 = np.dot(ED.T, activation[f"A{l - 1}"])
         S5 = np.tile(S4, (m, 1))
+        change[f"dW{l}"] = np.dot(change[f"S3{l}"], S5)
     return change
 
 
