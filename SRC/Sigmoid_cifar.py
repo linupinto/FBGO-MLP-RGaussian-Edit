@@ -51,8 +51,8 @@ def forwardPropagation(X, Y, parameters):
 
 change = {}
 for l in range(1, L + 1):
-    change[f"dA{l}"] = np.random.randn(train_X.shape[1], layer_dims[l])
-    change[f"dZ{l}"] = np.random.randn(train_X.shape[1], layer_dims[l])
+    change[f"dA{l}"] = np.random.randn(train_X.shape[0], layer_dims[l])
+    change[f"dZ{l}"] = np.random.randn(train_X.shape[0], layer_dims[l])
     change[f"S3{l}"] = np.random.randn(layer_dims[l], train_X.shape[1])
     change[f"dW{l}"] = np.random.randn(layer_dims[l], layer_dims[l - 1])
     change[f"db{l}"] = np.zeros((layer_dims[l], 1))
