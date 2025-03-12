@@ -96,12 +96,11 @@ def backwardPropagation(X, Y, parameters, activation):
         M = np.repeat(Max, m, axis=0)
         C = np.repeat(CL, m, axis=0)
         change[f"dA{l}"] = np.divide(np.multiply(activation[f"A{l}"], -(activation[f"Z{l}"] - M)), C)
-        S0 = np.dot(parameters[f"W{l + 1}"].T, change[f"db{l + 1}"])
-        S1 = np.tile(S0, (1, m))
-        change[f"S3{l}"] = np.multiply(S1, change[f"dA{l}"].T)
+        S0 = np.dot(parameters[f"W{l + 1}"].T, change[f"S3{l + 1}"])
+        change[f"S3{l}"] = np.multiply(S0, change[f"dA{l}"].T)
         change[f"db{l}"] = np.dot(change[f"S3{l}"], ED)
-        S4 = np.dot(ED.T, activation[f"A{l - 1}"])
-        S5 = np.tile(S4, (m, 1))
+        S4 = np.tile(ED, (1,activation[f"A{l - 1}"].shape[1]))
+        S5 = np.multiply(S4, activation[f"A{l - 1}"])
         change[f"dW{l}"] = np.dot(change[f"S3{l}"], S5)
     return change
 
